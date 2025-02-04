@@ -1,5 +1,7 @@
 require './GenericTaxHandler'
 
+# This class encapsulates the tax computation of the  digital services.
+# It yields the applicable tax data depending on the customer location
 class DigitalServicesTaxHandler < GenericTaxHandler
   attr_accessor :customer_location, :customer_type
 

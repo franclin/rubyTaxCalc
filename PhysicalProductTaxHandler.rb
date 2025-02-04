@@ -1,5 +1,7 @@
 require './GenericTaxHandler'
 
+# This class encapsulates the tax computation of the physical products.
+# It yields the applicable tax data depending on the customer location
 class PhysicalProductTaxHandler < GenericTaxHandler
   attr_accessor :customer_location, :customer_type
 

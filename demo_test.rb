@@ -1,8 +1,9 @@
 require 'minitest/autorun'
-require './PhysicalProductTaxHandler'
+require_relative './PhysicalProductTaxHandler'
 require_relative './DigitalServicesTaxHandler'
 require_relative './OnSiteServicesTaxHandler'
 
+# Here we run the unit tests for all scenarios
 class PhysicalProductTaxHandlerTest < Minitest::Test
   def test_business_physicalgoods_othereu
     obj_physical_good = PhysicalProductTaxHandler.new('OTHER_EU', 'BUSINESS')
